@@ -3,57 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Rosario Barone</title>
+  <title>Rosario Barone</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Georgia', serif;
+      display: flex;
       background-color: #ffffff;
       color: #333333;
-      line-height: 1.6;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
+    /* Sidebar */
+    .sidebar {
+      min-width: 200px;
+      background-color: #1a73e8;
+      color: white;
+      height: 100vh;
+      padding: 30px 20px;
+      position: fixed;
+    }
+    .sidebar h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      margin: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    /* Main Content */
+    .main {
+      margin-left: 220px;
       padding: 40px 20px;
-      text-align: center;
+      max-width: 900px;
     }
     img.profile {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 2px solid #333333;
+      border: 2px solid #333;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+    h1, h2 {
+      text-align: center;
     }
     h2 {
-      font-size: 24px;
-      margin-top: 40px;
+      font-size: 26px;
+      margin-top: 60px;
       margin-bottom: 20px;
-      color: #444444;
-      border-bottom: 1px solid #ccc;
+      color: #1a73e8;
+      border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
     p, ul {
-      text-align: left;
+      text-align: justify;
     }
     ul {
       padding-left: 20px;
     }
     a {
       color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 0.8em;
       color: #777;
       text-align: center;
@@ -62,20 +82,31 @@
 </head>
 <body>
 
-<div class="container">
+<div class="sidebar">
+  <h1>Rosario Barone</h1>
+  <a href="#about">About</a>
+  <a href="#currentstatus">Current Status</a>
+  <a href="#research">Research</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+  <a href="CV.html">CV</a> <!-- Link alla pagina del CV -->
+</div>
+
+<div class="main">
   <img src="FotoMia.jpg" alt="Rosario Barone" class="profile">
   <h1>Dr. Rosario Barone</h1>
-  <p>Assistant Professor of Statistics<br>
+  <p style="text-align: center;">Assistant Professor of Statistics<br>
   Department of Economics and Finance<br>
   University of Rome "Tor Vergata"</p>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>MSc in Econometrics and PhD in Statistics. Full time researcher mainly interested in Statistical methodology, with a focus on the Bayesian perspective. 
-Obsessed with football as well as Statistics.</p>
+    <p>MSc in Econometrics and PhD in Statistics. Full-time researcher mainly interested in Statistical methodology, with a focus on the Bayesian perspective. 
+    Obsessed with football as well as Statistics.</p>
   </section>
 
-    <section id="current status">
+  <section id="currentstatus">
     <h2>Current Status</h2>
     <p>I am currently a Visiting Assistant Professor in the Department of Biostatistics at the University of California, Los Angeles, where I am working on Bayesian nonparametric methods.</p>
   </section>
