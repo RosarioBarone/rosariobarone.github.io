@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       display: flex;
       background-color: #ffffff;
       color: #333333;
@@ -53,10 +53,8 @@
       margin-left: auto;
       margin-right: auto;
     }
-    h1, h2 {
-      text-align: center;
-    }
     h1 {
+      text-align: center;
       font-size: 34px;
       margin-bottom: 10px;
     }
@@ -67,6 +65,7 @@
       color: #0e7490; /* Cyan 7 */
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
+      text-align: left; /* Titoli a sinistra */
     }
     p, ul {
       text-align: justify;
@@ -79,6 +78,16 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 10px;
+      color: #555;
+    }
+    .contact-info span {
+      display: block;
+      margin: 2px 0;
     }
     footer {
       margin-top: 60px;
@@ -100,12 +109,12 @@
 <div class="main">
   <img src="FotoMia.jpg" alt="Rosario Barone" class="profile">
   <h1>Rosario Barone</h1>
-  <p style="text-align: center; font-size: 0.9em; margin-top: 10px; color: #555;">
-    Assistant Professor of Statistics<br>
-    Department of Economics and Finance, University of Rome "Tor Vergata"<br>
-    <a href="mailto:rosario.barone@uniroma2.it" style="color: #0e7490; text-decoration: none;">rosario.barone@uniroma2.it</a><br>
-    Room 2-B 35, Via Columbia 2, 00133 Rome, Italy
-  </p>
+  <div class="contact-info">
+    <span>Assistant Professor of Statistics</span>
+    <span>Department of Economics and Finance, University of Rome "Tor Vergata"</span>
+    <span>📧 <a href="mailto:rosario.barone@uniroma2.it" style="color: #0e7490; text-decoration: none;">rosario.barone@uniroma2.it</a></span>
+    <span>📍 Room 2-B 35, Via Columbia 2, 00133 Rome, Italy</span>
+  </div>
 
   <section id="about">
     <h2>About Me</h2>
