@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       display: flex;
       background-color: #ffffff;
       color: #333333;
@@ -21,25 +21,25 @@
       height: 100vh;
       padding: 30px 20px;
       position: fixed;
-    }
-    .sidebar h1 {
-      font-size: 20px;
-      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .sidebar a {
       display: block;
       color: white;
-      margin: 10px 0;
+      margin: 12px 0;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
     .sidebar a:hover {
       text-decoration: underline;
     }
     /* Main Content */
     .main {
-      margin-left: 220px;
-      padding: 40px 20px;
+      margin-left: 250px; /* aumentato lo spazio */
+      padding: 40px 30px;
       max-width: 900px;
     }
     img.profile {
@@ -55,6 +55,10 @@
     }
     h1, h2 {
       text-align: center;
+    }
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
     }
     h2 {
       font-size: 26px;
@@ -87,7 +91,6 @@
 <body>
 
 <div class="sidebar">
-  <h1>Rosario Barone</h1>
   <a href="#about">About</a>
   <a href="#research">Research</a>
   <a href="#teaching">Teaching</a>
@@ -102,27 +105,21 @@
   Department of Economics and Finance<br>
   University of Rome "Tor Vergata"</p>
 
-    <section id="news">
-    <h2>News and Updates</h2>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>MSc in Econometrics and PhD in Statistics. Full-time researcher mainly interested in Statistical methodology, with a focus on the Bayesian perspective. 
+    Obsessed with football as well as Statistics.</p>
     <p>I am currently a Visiting Assistant Professor in the Department of Biostatistics at the University of California, Los Angeles, where I am working on Bayesian nonparametric methods.</p>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>MSc in Econometrics and PhD in Statistics. Full time researcher mainly interested in Statistical methodology, with a focus on the Bayesian perspective. Obsessed with football as well as Statistics.</p>
-  </section>
-
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Bayesian Methods</li>
-      <li>Mixture Models</li>
-      <li>Latent Processes</li>
-      <li>Inference for Stochastic Processes</li>
-      <li>Copula Models</li>
-      <li>Applied Bayesian Modelling</li>
-    </ul>
-  </section>
+<section id="research">
+  <h2>Research Interests</h2>
+  <p>
+    My research focuses on the development of statistical methodologies, with a particular emphasis on Bayesian approaches. 
+    I am interested in mixture models, latent processes, and inference for stochastic processes, aiming to provide flexible and robust tools for the analysis of complex data structures.
+    I also work on copula models and applied Bayesian modeling, with applications across a variety of disciplines including economics, finance, social sciences, and biostatistics.
+  </p>
+</section>
 
   <section id="teaching">
     <h2>Teaching</h2>
