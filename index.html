@@ -6,123 +6,119 @@
   <title>Dr. Rosario Barone</title>
   <style>
     body {
+      font-family: 'Georgia', serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      min-height: 100vh;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
     }
-    .sidebar {
-      background-color: #2c3e50;
-      color: white;
-      width: 250px;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .sidebar h1 {
-      font-size: 24px;
+    img.profile {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 2px solid #333333;
+    }
+    h1 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
-    .sidebar p {
-      font-size: 14px;
-      margin: 5px 0;
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #444444;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
     }
-    .sidebar a {
-      color: #1abc9c;
+    p, ul {
+      text-align: left;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #1a73e8;
       text-decoration: none;
     }
-    .sidebar a:hover {
+    a:hover {
       text-decoration: underline;
-    }
-    .content {
-      flex-grow: 1;
-      padding: 40px;
-      background-color: #f4f4f4;
-    }
-    .content h2 {
-      color: #2c3e50;
-      margin-top: 40px;
-    }
-    .content ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .content ul li {
-      margin-bottom: 10px;
     }
     footer {
       margin-top: 50px;
       font-size: 0.8em;
       color: #777;
-    }
-    img.profile {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <div>
-      <!-- Se vuoi, carica una tua foto in /img/profile.jpg e decommenta la riga qui sotto -->
-      <!-- <img src="img/profile.jpg" alt="Rosario Barone" class="profile"> -->
-      <h1>Dr. Rosario Barone</h1>
-      <p>Assistant Professor of Statistics</p>
-      <p>University of Rome "Tor Vergata"</p>
-      <hr style="border-color: #1abc9c;">
-      <p><a href="mailto:rosario.barone@uniroma2.it">Email Me</a></p>
-      <p><a href="https://scholar.google.com/citations?user=c1cerjcAAAAJ" target="_blank">Google Scholar</a></p>
-      <p><a href="https://orcid.org/0000-0003-4979-2611" target="_blank">ORCID</a></p>
-      <p><a href="https://github.com/rosariobarone" target="_blank">GitHub</a></p>
-    </div>
-    <footer>
-      © 2025 Rosario Barone
-    </footer>
-  </div>
+<div class="container">
+  <img src="FotoMia.jpg" alt="Rosario Barone" class="profile">
+  <h1>Dr. Rosario Barone</h1>
+  <p>Assistant Professor of Statistics<br>
+  Department of Economics and Finance<br>
+  University of Rome "Tor Vergata"</p>
 
-  <div class="content">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am an Assistant Professor of Statistics at the University of Rome "Tor Vergata". I hold an MSc in Econometrics and a PhD in Statistics. 
-      My research focuses on developing new statistical tools, especially from a Bayesian perspective, with applications in economics, finance, social sciences, and medicine. 
-      I have a strong passion for both statistics and football.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an Assistant Professor of Statistics at the University of Rome "Tor Vergata". I hold an MSc in Econometrics and a PhD in Statistics. 
+    My research focuses on the methodological development of new statistical tools, particularly from a Bayesian perspective, with applications in various fields such as economics, finance, social sciences, and medicine. 
+    I have a strong passion for both statistics and football.</p>
+  </section>
 
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Bayesian Methods</li>
-        <li>Mixture Models</li>
-        <li>Latent Markov Models</li>
-        <li>Inference for Stochastic Processes</li>
-        <li>Copula Models</li>
-        <li>Applied Bayesian Modelling</li>
-      </ul>
-    </section>
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Bayesian Methods</li>
+      <li>Mixture Models</li>
+      <li>Latent Markov Models</li>
+      <li>Inference for Stochastic Processes</li>
+      <li>Copula Models</li>
+      <li>Applied Bayesian Modelling</li>
+    </ul>
+  </section>
 
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li><strong>Statistical Tools for Decision Making</strong> – Bachelor Degree in Global Governance (A.Y. 2024/2025)</li>
-        <li><strong>Biostatistics</strong> – Master in Musculoskeletal and Rheumatologic Physiotherapy (A.Y. 2023/2024)</li>
-        <li><strong>Unsupervised Learning</strong> – Master in Data Science for Public Decision Making (A.Y. 2023/2024)</li>
-        <li><strong>Statistical Learning</strong> – PhD in Data Science (A.Y. 2022/2023)</li>
-        <li><strong>Quantitative Methods III</strong> – Bachelor Degree in Business Administration and Economics (A.Y. 2021/2022)</li>
-      </ul>
-    </section>
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>Statistical Tools for Decision Making</strong> – Bachelor Degree in Global Governance (A.Y. 2024/2025)</li>
+      <li><strong>Biostatistics</strong> – Master in Musculoskeletal and Rheumatologic Physiotherapy (A.Y. 2023/2024)</li>
+      <li><strong>Unsupervised Learning</strong> – Master in Data Science for Public Decision Making (A.Y. 2023/2024)</li>
+      <li><strong>Statistical Learning</strong> – PhD in Data Science (A.Y. 2022/2023)</li>
+      <li><strong>Quantitative Methods III</strong> – Bachelor Degree in Business Administration and Economics (A.Y. 2021/2022)</li>
+    </ul>
+  </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>Please refer to my profiles for a complete list:</p>
-      <ul>
-        <li><a href="https://scholar.google.com/citations?user=c1cerjcAAAAJ" target="_blank">Google Scholar</a></li>
-        <li><a href="https://orcid.org/0000-0003-4979-2611" target="_blank">ORCID</a></li>
-      </ul>
-    </section>
-  </div>
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>Please refer to my profiles for a complete list:</p>
+    <ul>
+      <li><a href="https://scholar.google.com/citations?user=c1cerjcAAAAJ" target="_blank">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0003-4979-2611" target="_blank">ORCID</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rosario.barone@uniroma2.it">rosario.barone@uniroma2.it</a><br>
+    Office: Room 2-B 35, Via Columbia 2, 00133 Rome, Italy</p>
+  </section>
+
+  <footer>
+    © 2025 Dr. Rosario Barone
+  </footer>
+
+</div>
 
 </body>
 </html>
