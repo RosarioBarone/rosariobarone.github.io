@@ -110,6 +110,34 @@
       color: #777;
       text-align: center;
     }
+
+    @media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .sidebar a {
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  img.profile {
+    width: 120px;
+    height: 120px;
+  }
+}
   </style>
 </head>
 <body>
